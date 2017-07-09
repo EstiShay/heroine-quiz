@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Character Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Which heroine from literature are you most like?</h1>
+      </div>
+      <hr>
+
+      <form id="character_quiz">
+        <div class="form-group">
+          <label for="life_goal">#1: What is your life goal?</label>
+          <select class="form-control" id="life_goal">
+            <option value="1">Find true love, get married and have a family</option>
+            <option value="2">Freedom from social constraints</option>
+            <option value="3">Artistic expression</option>
+            <option value="4">Pursue a career and knowledge</option>
+            <option value="5">Find a way to maintain your independence</option>
+            <option value="6">Status and respect within your community</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="flaw">#2: What is your greatest flaw?</label>
+          <select class="form-control" id="flaw">
+            <option value="1">Jumping to conclusions</option>
+            <option value="2">Lack of worldly knowledge</option>
+            <option value="3">Being a nosy busybody</option>
+            <option value="4">Impetuousness</option>
+            <option value="5">Jealousy of others’ success</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rebellious">#3: Are you rebellious?</label>
+          <div class="radio" id="rebellious">
+              <label>
+                <input type="radio" name="rebellious" value="1">
+                Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="rebellious" value="2">
+                No
+              </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info">Who am I?</button>
+      </form>
+
+      <div class="well" id="lizzy">
+        <h4>You are Lizzy Bennet from Jane Austen's Pride & Prejudice!</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+
+      <div class="well" id="emma">
+        <h4>You are Emma Woodhouse from Jane Austen's Emma!</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+
+      <div class="well" id="kit">
+        <h4>You are Kit from Elizabeth George Speare's The Witch of Blackbird Pond!</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+
+      <div class="well" id="ellen">
+        <h4>You are Ellen Cherry Charles from Tom Robbins' Skinny Legs and All!</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+
+      <div class="well" id="edna">
+        <h4>You are Edna Pontellier from Kate Chopin's The Awakening!</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+
+      <div class="well" id="jane">
+        <h4>You are Jane Eyre, written by Charlotte Bronte!</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+
+      <div class="well" id="other">
+        <h4>Hmmm, you didn't perfectly match on of our heroines.  Try again?</h4>
+        <input type="button" class="btn btn-info" value="Take the quiz again" onClick="window.location.reload()">
+      </div>
+    </div>
+  </body>
+</html>
